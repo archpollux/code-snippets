@@ -1,0 +1,57 @@
+#main {
+    width: 100%;
+}
+
+#creator {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    fieldset {
+        legend {
+            padding-left: 0;
+            padding-bottom: 20px;
+            font-size: 24px;
+        }
+        .field {
+            overflow: auto;
+            #newtitle, #newcontent {
+                width: 80%;
+                float: right;
+            }
+            #newcontent {
+                height: 100px;
+            }
+        }
+    }
+}
+
+#collection {
+    margin-left: 15%;
+    margin-bottom: 15%;
+    width: 70%;
+}
+
+.alert {
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 4px;
+    .title {
+        font-weight: bold;
+    }
+    .content {
+        font-family: Courier;
+        font-size: 11px;
+    }
+    .close-alert {
+        display: table-column;
+        width: 15px;
+        height: 1el;
+        color: yellow;
+        background-color: red;
+        float: right;
+        cursor: pointer;
+        border-radius: 3px;
+        text-align: center;
+    }
+}

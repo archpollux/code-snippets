@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="alerter.css">
+  </head>
+  <body>
+    <script type="text/template" id="creator-template">
+    </script>
+    <script type="text/template" id="item-view-template">
+      <div class="close-alert">x</div>
+      <div class="title"><%= title %></div>
+      <div class="content"><%= content %></div>
+    </script>
+    <div id="main">
+      <div id="creator">
+          <fieldset>
+            <legend>Enter new alert:</legend>
+            <div class="field">
+              <label for="title">Title</label>:
+              <input id="newtitle" type="text" name="title" value="Title"/>
+            </div>
+            <div class="field">
+              <label for="content">Content</label>:
+              <textarea id="newcontent" name="content">Lorem ipsum</textarea>
+            </div>
+            <button id="createbutton">Create</button>
+          </fieldset>
+      </div>
+      <div id="collection"></div>
+    </div>
+  </body>
+</html>
